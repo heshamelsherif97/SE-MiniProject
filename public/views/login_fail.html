@@ -1,0 +1,138 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Smart Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- Meta tag Keywords -->
+	<!-- css files -->
+	<link href="css/style_index.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<!-- //css files -->
+	<!-- online-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext,vietnamese" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900iSource+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<!-- //js -->
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+
+	<script src="js/jquery.chocolat.js"></script>
+	<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+	<!--light-box-files -->
+	<script>
+        $(function() {
+            $('.gallery-grid a').Chocolat();
+        });
+	</script>
+
+	<!-- //js -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                pager:false,
+                nav: true,
+                speed: 1000,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+	</script>
+
+
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+	</script>
+	<!-- Meta tag Keywords -->
+	<!-- css files -->
+	<link href="css/style_login.css" rel="stylesheet" type="text/css" media="all">
+	<!-- online-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900iSlabo+27px&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!--//online-fonts -->
+<body>
+
+<div class="ban-top-con">
+	<div class="top_nav_left">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav menu__list">
+						<li class="active menu__item menu__item--current"><a class="menu__link" href="/">Home <span class="sr-only">(current)</span></a></li>
+						<li class=" menu__item"><a class="menu__link" href="/portfolios">Portfolios</a></li>
+						<li class=" menu__item"><a class="menu__link" href="login">Login</a></li>
+						<li class=" menu__item"><a class="menu__link" href="register">Register</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	</div>
+	<div class="clearfix"></div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<!--header-->
+
+<!--//header-->
+
+<!--main-->
+<div class="main-w3l">
+	<div class="w3layouts-main">
+		<h2>Login Now</h2>
+		<form method="post" action="/login">
+			<input value="E-MAIL" name="email" type="email" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-Mail';}"/>
+			<input value="PASSWORD" name="password" type="password" required="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}"/>
+			<div class="clear"></div>
+			<input type="submit" value="login" name="login">
+		</form>
+		<p>Wrong Email or Password</p><br>
+		<p>Don't Have an Account ?<a href="register">Register Now</a></p>
+	</div>
+</div>
+<!--//main-->
+
+<!--footer-->
+<div class="footer-w3l">
+	<p>&copy; 2017 All rights reserved | Design by Hesham Sherif</p>
+</div>
+<!--//footer-->
+
+</body>
+</html>

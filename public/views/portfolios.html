@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolios</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link href="css/style_index.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<!-- //css files -->
+<!-- online-fonts -->
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900iSource+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+
+<script src="js/jquery.chocolat.js"></script>
+
+<script>
+    function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-red";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-red", "");
+        }
+    }
+</script>
+
+
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+<!--light-box-files -->
+<script>
+    $(function() {
+        $('.gallery-grid a').Chocolat();
+    });
+</script>
+
+<!-- //js -->
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+        $("#slider").responsiveSlides({
+            auto: true,
+            pager:false,
+            nav: true,
+            speed: 1000,
+            namespace: "callbacks",
+            before: function () {
+                $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+                $('.events').append("<li>after event fired.</li>");
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+
+<style>
+	html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+	.btn-file {
+		position: relative;
+		overflow: hidden;
+	}
+	.btn-file input[type=file] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 100%;
+		min-height: 100%;
+		font-size: 100px;
+		text-align: right;
+		filter: alpha(opacity=0);
+		opacity: 0;
+		outline: none;
+		background: white;
+		cursor: inherit;
+		display: block;
+	}
+</style>
+<body class="w3-teal">
+
+<div class="ban-top-con">
+	<div class="top_nav_left">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav menu__list">
+						<li class="active menu__item menu__item--current"><a class="menu__link" href="/home">Home <span class="sr-only">(current)</span></a></li>
+						<li class=" menu__item"><a class="menu__link" href="/portfolios">Portfolios</a></li>
+						<li class=" menu__item"><a class="menu__link" href="/portfolio">my account</a></li>
+						<li class=" menu__item"><a class="menu__link" href="/logout">logout</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<br><br><br><br><br>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+	<!-- The Grid -->
+	<div class="w3-row-padding">
+		<!-- Left Column -->
+
+
+		<!-- Right Column -->
+		<div class="w3-center">
+
+
+
+
+			<div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+				<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Students Portfolios</h2>
+
+
+				<div class="w3-row-padding">
+					<% for(var i=0; i<profiles.length; i++){%>
+					<div class="w3-quarter w3-container w3-margin-bottom">
+						<a href="/portfolio_?email=<%=profiles[i].email%> ">	<img src="<%=profiles[i].avatar%>" alt="Norway" style="width:150px" class="w3-hover-opacity w3-circle">
+							<div class="w3-container w3-white">
+								<p><%=profiles[i].name%></p></a>
+					</div>
+				</div>
+				<% } %>
+
+
+
+			</div></div>
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+</div>
+
+<!-- End Right Column -->
+</div>
+
+<!-- End Grid -->
+</div>
+
+<!-- End Page Container -->
+</div>
+<br><br><br><br>
+<div class="footer-w3l">
+	<p>&copy; 2017 All rights reserved | Design by Hesham Sherif</p>
+</div>
+
+</body>
+</html>
